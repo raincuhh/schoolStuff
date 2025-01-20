@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>byggematerialer</title>
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="script.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<section class="box" id="question-box">
+					<div class="box-content">
+						<header class="box-header">Hvor mye skal du kjøpe av byggematerialer?</header>
+						<div class="radio-group">
+							<label for="first-question-option-1"
+								><input type="radio" name="first-question-option" id="first-question-option-1" />
+								Kvadratiske heller, brostein, fliser ol.</label
+							>
+							<label for="first-question-option-2"
+								><input type="radio" name="first-question-option" id="first-question-option-2" />
+								Rektangulære heller, leggestein, fliser ol.</label
+							>
+							<label for="first-question-option-3"
+								><input type="radio" name="first-question-option" id="first-question-option-3" />
+								Materialer til panelig, plattinger ol.</label
+							>
+						</div>
+					</div>
+					<button id="next-box">Neste Steg</button>
+				</section>
+				<section class="box" id="second-box" style="display: none">
+					<div class="box-content">
+						<header class="box-header">Tast inn antall kvadratmeter du trenger:</header>
+						<div class="input-group">
+							<label for="square-meters"
+								><input type="number" id="square-meters" placeholder="10" /> Antall
+								kvadratmeter:</label
+							>
+							<label for="dimension-height"
+								><input type="number" id="dimension-height" placeholder="10" /> Høyde (mm):</label
+							>
+							<label for="dimension-width"
+								><input type="number" id="dimension-width" placeholder="10" /> Bredde (mm):</label
+							>
+							<label for="package-size"
+								><input type="number" id="package-size" placeholder="50" /> Hvor mange er det i hver
+								pakke?</label
+							>
+						</div>
+					</div>
+					<button id="calculate">Calculate</button>
+				</section>
+				<section class="box" id="third-box">
+					<div class="box-content">
+						<header class="box-header">Tast inn antall kvadratmeter du trenger:</header>
+						<div class="input-group">
+							<label for="square-meters"
+								><input type="number" id="square-meters" placeholder="10" /> Antall
+								kvadratmeter:</label
+							>
+							<label for="dimension-height"
+								><input type="number" id="dimension-height" placeholder="10" /> Høyde (mm):</label
+							>
+							<label for="dimension-width"
+								><input type="number" id="dimension-width" placeholder="10" /> Bredde (mm):</label
+							>
+							<label for="package-size"
+								><input type="number" id="package-size" placeholder="50" /> Hvor mange er det i hver
+								pakke?</label
+							>
+						</div>
+					</div>
+					<button id="calculate">Calculate</button>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>

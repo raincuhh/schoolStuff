@@ -1,0 +1,46 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: none;
+}
+
+:root {
+	--font-size: 16px;
+	--font-color: rgb(1, 1, 1);
+	--bg-color: rgb(255, 255, 255);
+}
+
+.main {
+	width: 100%;
+	height: 100dvh;
+	background-color: var(--bg-color);
+}
+
+.main-container {
+	padding: 1rem;
+	position: relative;
+}
+
+.parameter-container {
+	padding: 1rem;
+	position: absolute;
+	display: flex;
+	gap: 1rem;
+	flex-direction: column;
+	border-radius: 0.5rem;
+	background: rgb(34, 34, 34);
+	color: rgb(200, 200, 200);
+	border: 2px solid rgb(27, 27, 27);
+	width: 12rem;
+	height: 6rem;
+}
+
+.words-container {
+	margin: auto;
+	padding: 0 2rem;
+	max-width: 70%;
+	font-size: var(--font-size);
+	color: var(--font-color);
+}
