@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>hva kan javascript gjøre?</h1>
+
+		<button id="button">klikk meg</button>
+		<span id="appearing-text"></span>
+	</body>
+	<script>
+		let button = document.getElementById("button");
+		let appearingText = document.getElementById("appearing-text");
+
+		document.addEventListener("DOMContentLoaded", () => {
+			button.addEventListener("click", () => {
+				appearingText.innerHTML = "hello world!";
+			});
+		});
+	</script>
+</html>
